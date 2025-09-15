@@ -1,0 +1,162 @@
+[
+  {
+    "propertyName": "Position",
+    "matchName": "ADBE Position",
+    "keys": [
+      {
+        "time": 0,
+        "value": [
+          960,
+          476.284591047731,
+          0
+        ],
+        "inEase": [
+          {
+            "influence": 16.666666667,
+            "speed": 0
+          }
+        ],
+        "outEase": [
+          {
+            "influence": 16.666666667,
+            "speed": 231.829120848695
+          }
+        ],
+        "interpolationIn": "linear",
+        "interpolationOut": "linear"
+      },
+      {
+        "time": 0.6006006006006,
+        "value": [
+          833.306121826172,
+          418.530609130859,
+          0
+        ],
+        "inEase": [
+          {
+            "influence": 16.666666667,
+            "speed": 231.829120848695
+          }
+        ],
+        "outEase": [
+          {
+            "influence": 16.666666667,
+            "speed": 205.375940204582
+          }
+        ],
+        "interpolationIn": "linear",
+        "interpolationOut": "linear"
+      },
+      {
+        "time": 1.66833500166833,
+        "value": [
+          658.285720825195,
+          550.646575342466,
+          0
+        ],
+        "inEase": [
+          {
+            "influence": 33.333333,
+            "speed": 0
+          }
+        ],
+        "outEase": [
+          {
+            "influence": 33.333333,
+            "speed": 0
+          }
+        ],
+        "interpolationIn": "bezier",
+        "interpolationOut": "bezier"
+      },
+      {
+        "time": 2.93626960293627,
+        "value": [
+          796.73469543457,
+          476.284591047731,
+          0
+        ],
+        "inEase": [
+          {
+            "influence": 33.333333,
+            "speed": 0
+          }
+        ],
+        "outEase": [
+          {
+            "influence": 16.666666667,
+            "speed": 229.678573534153
+          }
+        ],
+        "interpolationIn": "bezier",
+        "interpolationOut": "linear"
+      },
+      {
+        "time": 3.63697030363697,
+        "value": [
+          706.238805023611,
+          343.202399266909,
+          0
+        ],
+        "inEase": [
+          {
+            "influence": 16.666666667,
+            "speed": 229.678573534153
+          }
+        ],
+        "outEase": [
+          {
+            "influence": 16.666666667,
+            "speed": 0
+          }
+        ],
+        "interpolationIn": "linear",
+        "interpolationOut": "hold"
+      },
+      {
+        "time": 4.23757090423757,
+        "value": [
+          796.73469543457,
+          476.284591047731,
+          0
+        ],
+        "inEase": [
+          {
+            "influence": 16.666666667,
+            "speed": 0
+          }
+        ],
+        "outEase": [
+          {
+            "influence": 16.666666667,
+            "speed": 0
+          }
+        ],
+        "interpolationIn": "linear",
+        "interpolationOut": "linear"
+      },
+      {
+        "time": 5.60560560560561,
+        "value": [
+          796.73469543457,
+          476.284591047731,
+          0
+        ],
+        "inEase": [
+          {
+            "influence": 16.666666667,
+            "speed": 0
+          }
+        ],
+        "outEase": [
+          {
+            "influence": 16.666666667,
+            "speed": 0
+          }
+        ],
+        "interpolationIn": "linear",
+        "interpolationOut": "linear"
+      }
+    ]
+  }
+]

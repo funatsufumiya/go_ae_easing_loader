@@ -243,12 +243,42 @@ func (ae *AEEasingLoader) GetValuesAtTime(keys []Keyframe, t float32) []float32 
     return result
 }
 
-// Get returns the first value (float32) at time t for property index
+// Returns the first value (float32) at time t for property index
 func (ae *AEEasingLoader) Get(t float32, propertyIndex int) float32 {
     return ae.GetValuesAtTime(ae.Tracks[propertyIndex].Keyframes, t)[0]
 }
 
-// GetVec returns all values at time t for property index
+// Returns the first two values ([x, y]) at time t for property index. If not enough values, missing elements are filled with 0.
+func (ae *AEEasingLoader) Get2(t float32, propertyIndex int) (float32, float32) {
+    v := ae.GetValuesAtTime(ae.Tracks[propertyIndex].Keyframes, t)
+    var out [2]float32
+    for i := 0; i < 2 && i < len(v); i++ {
+        out[i] = v[i]
+    }
+    return out[0], out[1]
+}
+
+// Returns the first three values ([x, y, z]) at time t for property index. If not enough values, missing elements are filled with 0.
+func (ae *AEEasingLoader) Get3(t float32, propertyIndex int) (float32, float32, float32) {
+    v := ae.GetValuesAtTime(ae.Tracks[propertyIndex].Keyframes, t)
+    var out [3]float32
+    for i := 0; i < 3 && i < len(v); i++ {
+        out[i] = v[i]
+    }
+    return out[0], out[1], out[2]
+}
+
+// Returns the first four values ([x, y, z, w]) at time t for property index. If not enough values, missing elements are filled with 0.
+func (ae *AEEasingLoader) Get4(t float32, propertyIndex int) (float32, float32, float32, float32) {
+    v := ae.GetValuesAtTime(ae.Tracks[propertyIndex].Keyframes, t)
+    var out [4]float32
+    for i := 0; i < 4 && i < len(v); i++ {
+        out[i] = v[i]
+    }
+    return out[0], out[1], out[2], out[3]
+}
+
+// Returns all values at time t for property index
 func (ae *AEEasingLoader) GetVec(t float32, propertyIndex int) []float32 {
     return ae.GetValuesAtTime(ae.Tracks[propertyIndex].Keyframes, t)
 }
