@@ -1,5 +1,8 @@
 # go_ae_easing_loader
 
+![](docs/animation.gif)
+![](docs/screenshot.png)
+
 AE Easing Loader for Go (Pure Go)
 
 Go port from [ofxAEEasingLoader](https://github.com/funatsufumiya/ofxAEEasingLoader)
