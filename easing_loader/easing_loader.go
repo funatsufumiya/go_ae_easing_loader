@@ -54,6 +54,17 @@ type AEEasingLoader struct {
     Tracks []Track
 }
 
+// Prints track information for debugging (propertyName, layerName, parentName, matchName)
+func (ae *AEEasingLoader) DumpTracks() {
+    for _, t := range ae.Tracks {
+        println("------------")
+        println("property_name: '" + t.PropertyName + "'")
+        println("layer_name: '" + t.LayerName + "'")
+        println("parent_name: '" + t.ParentName + "'")
+        println("( match_name: '" + t.MatchName + "' )")
+    }
+}
+
 func (ae *AEEasingLoader) LoadJsonFile(path string) error {
     f, err := os.Open(path)
     if err != nil {
