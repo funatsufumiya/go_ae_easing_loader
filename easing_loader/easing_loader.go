@@ -282,3 +282,48 @@ func (ae *AEEasingLoader) Get4(t float32, propertyIndex int) (float32, float32, 
 func (ae *AEEasingLoader) GetVec(t float32, propertyIndex int) []float32 {
     return ae.GetValuesAtTime(ae.Tracks[propertyIndex].Keyframes, t)
 }
+
+// Returns the first value (float32) at time t for property name (with optional layer/parent). If not found, returns 0.
+func (ae *AEEasingLoader) GetByName(t float32, propertyName string, layerName string, parentName string) float32 {
+    idx, err := ae.GetPropertyIndex(propertyName, layerName, parentName)
+    if err != nil {
+        return 0
+    }
+    return ae.Get(t, idx)
+}
+
+// Returns the first two values ([x, y]) at time t for property name. If not found, returns (0,0).
+func (ae *AEEasingLoader) Get2ByName(t float32, propertyName string, layerName string, parentName string) (float32, float32) {
+    idx, err := ae.GetPropertyIndex(propertyName, layerName, parentName)
+    if err != nil {
+        return 0, 0
+    }
+    return ae.Get2(t, idx)
+}
+
+// Returns the first three values ([x, y, z]) at time t for property name. If not found, returns (0,0,0).
+func (ae *AEEasingLoader) Get3ByName(t float32, propertyName string, layerName string, parentName string) (float32, float32, float32) {
+    idx, err := ae.GetPropertyIndex(propertyName, layerName, parentName)
+    if err != nil {
+        return 0, 0, 0
+    }
+    return ae.Get3(t, idx)
+}
+
+// Returns the first four values ([x, y, z, w]) at time t for property name. If not found, returns (0,0,0,0).
+func (ae *AEEasingLoader) Get4ByName(t float32, propertyName string, layerName string, parentName string) (float32, float32, float32, float32) {
+    idx, err := ae.GetPropertyIndex(propertyName, layerName, parentName)
+    if err != nil {
+        return 0, 0, 0, 0
+    }
+    return ae.Get4(t, idx)
+}
+
+// Returns all values at time t for property name. If not found, returns nil.
+func (ae *AEEasingLoader) GetVecByName(t float32, propertyName string, layerName string, parentName string) []float32 {
+    idx, err := ae.GetPropertyIndex(propertyName, layerName, parentName)
+    if err != nil {
+        return nil
+    }
+    return ae.GetVec(t, idx)
+}
