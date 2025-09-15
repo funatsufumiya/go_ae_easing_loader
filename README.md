@@ -18,6 +18,10 @@ $ cd go_ae_easing_loader
 $ go run ./examples/simple/main.go
 ```
 
+## Editor
+
+see [ofxAEEasingLoader/README.md#appendix-json-editor](https://github.com/funatsufumiya/ofxAEEasingLoader?tab=readme-ov-file#appendix-json-editor)
+
 ## License
 
 0BSD or WTFPL
