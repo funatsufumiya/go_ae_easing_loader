@@ -1,5 +1,7 @@
 # go_ae_easing_loader
 
+AE Easing Loader for Go (Pure Go)
+
 Go port from [ofxAEEasingLoader](https://github.com/funatsufumiya/ofxAEEasingLoader)
 
 > [!WARNING]
